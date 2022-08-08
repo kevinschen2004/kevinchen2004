@@ -1,0 +1,60 @@
+def gpa_checker():
+ grades = []
+ class1 = input('class 1 grade ')
+ grades.append(class1)
+ class2 = input('class 2 grade ')
+ grades.append(class2)
+ class3 = input('class 3 grade ')
+ grades.append(class3)
+ class4 = input('class 4 grade ')
+ grades.append(class4)
+ extra5 = input("do you have a fifth class? 'yes' or 'no' ")
+ if (extra5 == 'yes'):
+   class5 = input('class 5 grade ')
+   grades.append(class5)
+
+ grades2 = []
+ for gpa in grades:
+   if gpa == 'a':
+     gpa = 4.0
+     grades2.append(gpa)
+   elif gpa == 'a-':
+     gpa = 3.7
+     grades2.append(gpa)
+   elif gpa == 'b+':
+     gpa = 3.3
+     grades2.append(gpa)
+   elif gpa == 'b':
+     gpa = 3.0
+     grades2.append(gpa)
+   elif gpa == 'b-':
+     gpa = 2.7
+     grades2.append(gpa)
+   elif gpa == 'c+':
+     gpa = 2.3
+     grades2.append(gpa)
+   elif gpa == 'c':
+     gpa = 2.0
+     grades2.append(gpa)
+   elif gpa == 'c-':
+     gpa = 1.7
+     grades2.append(gpa)
+   elif gpa == 'd+':
+     gpa = 1.3
+     grades2.append(gpa)
+   elif gpa == 'd':
+     gpa = 1.0
+     grades2.append(gpa)
+   elif gpa == 'f':
+     gpa = 0.0
+     grades2.append(gpa)
+   else:
+     print('one of your inputs is invalid')
+
+   total = sum(grades2)/len(grades2)
+ print(grades2)
+ print(total)
+
+gpa_checker()
+
+
